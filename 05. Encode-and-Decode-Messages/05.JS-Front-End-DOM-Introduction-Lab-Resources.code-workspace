@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "05.JS-Front-End-DOM-Introduction-Lab-Resources",
+			"path": "C:/Users/Dido/Downloads/05.JS-Front-End-DOM-Introduction-Lab-Resources"
+		},
+		{
+			"name": "JS-SoftUni",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JS-SoftUni",
+		"liveServer.settings.port": 5501
+	}
+}
