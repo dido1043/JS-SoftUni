@@ -1,5 +1,7 @@
 function attachEvents() {
-    // TODO:
+    let phoneList = document.querySelector('ul');
+    const loadBtn = document.getElementById('btnLoad');
+
 }
 
 attachEvents();
