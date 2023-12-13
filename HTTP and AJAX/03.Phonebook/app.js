@@ -19,7 +19,7 @@ function attachEvents() {
 
         contacts.forEach(c => {
             const li = document.createElement('li');
-            li.textContent = `${c.person}: ${c.phone} `;
+            li.textContent = `${c.person}: ${c.phone}`;
 
             let deleteButton = document.createElement("button");
             deleteButton.textContent = "Delete";
