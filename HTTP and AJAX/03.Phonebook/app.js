@@ -5,9 +5,7 @@ function attachEvents() {
     const phoneInput = document.getElementById('phone');
     const createButton = document.getElementById('btnCreate');
 
-
     const baseURL = 'http://localhost:3030/jsonstore/phonebook'
-    //todo
     loadBtn.addEventListener('click', async () => {
         phoneList.textContent = '';
         const resp = await fetch(baseURL);
@@ -36,12 +34,10 @@ function attachEvents() {
                     method: 'DELETE',
                 });
                 li.remove();
-                console.log(id);
     
             }
         });
 
-        //console.log(contacts);
         
     });
 
@@ -60,8 +56,6 @@ function attachEvents() {
         } else {
             alert('Invalid phone or person!');
         }
-
-        //console.log(phoneData);
     });
 }
 
