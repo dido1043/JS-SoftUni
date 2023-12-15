@@ -48,7 +48,9 @@ function solve() {
 
     li.appendChild(editButton);
     li.appendChild(applyButton);
-
+    studentInput.value = '';
+    universityInput.value = ''; 
+    scoreInput.value = '';
 
     nextBtn.setAttribute('disabled', true);
 
