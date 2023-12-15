@@ -8,8 +8,7 @@ function solve() {
   const nextBtn = document.querySelector('#next-btn');
 
   nextBtn.addEventListener('click', () =>{
-    let ul = document.createElement('ul');
-    ul.className = "preview-list";
+    let ul = document.querySelector('#preview-list');
     let li = document.createElement('li');
     li.className = "application";
 
@@ -19,18 +18,20 @@ function solve() {
     h4.textContent = studentInput.value;
 
     let universityParagraph = document.createElement('p');
-    universityParagraph.textContent = universityInput.value;
+    universityParagraph.textContent = "University: " + universityInput.value;
 
     let scoreParagraph = document.createElement('p');
-    scoreParagraph.textContent = scoreInput.value;
+    scoreParagraph.textContent = "Score: " + scoreInput.value;
 
     let editButton = document.createElement('button');
     editButton.classList.add('action-btn');
     editButton.classList.add('edit');
+    editButton.textContent = 'edit';
 
     let applyButton = document.createElement('button');
     applyButton.classList.add('action-btn');
     applyButton.classList.add('apply');
+    applyButton.textContent = 'delete';
 
     console.log(editButton);
     ul.appendChild(li);
@@ -42,6 +43,7 @@ function solve() {
     li.appendChild(applyButton);
 
     console.log(ul);
+    nextBtn.setAttribute('disabled', true)
   });
 
 }
